@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fefae0;
+}
+.dashboard {
+  display: grid;
+  grid-template-columns: 200px auto;
+  gap: 20px;
+}
+.labels div {
+  font-weight: bold;
+  padding: 16px;
+}
+.content .phases, .steps, .emotions {
+  display: flex;
+  gap: 8px;
+}
+.phase, .step, .emotion {
+  padding: 16px;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+}
+.awareness { background-color: #e63946; }
+.consideration { background-color: #52b788; }
+.action { background-color: #ffba08; }
+.service-delivery { background-color: #457b9d; }
+.loyalty { background-color: #f4a261; }
+.red { background-color: #e63946; }
+.green { background-color: #52b788; }
+.yellow { background-color: #ffba08; }
+.blue { background-color: #457b9d; }
+.emotion.excited { background-color: #52b788; }
+.emotion.happy { background-color: #ffba08; }
+.emotion.neutral { background-color: #457b9d; }
+.emotion.bad { background-color: #f4a261; }
+.emotion.angry { background-color: #e63946; }
