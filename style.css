@@ -1,37 +1,75 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #fefae0;
+  background-color: #fffbea;
+  margin: 0;
+  padding: 20px;
 }
-.dashboard {
-  display: grid;
-  grid-template-columns: 200px auto;
-  gap: 20px;
+
+.container h2, h3 {
+  color: #333;
 }
-.labels div {
-  font-weight: bold;
-  padding: 16px;
-}
-.content .phases, .steps, .emotions {
+
+.phases {
   display: flex;
-  gap: 8px;
 }
-.phase, .step, .emotion {
-  padding: 16px;
+
+.phase {
+  flex: 1;
+  padding: 15px;
   color: white;
-  border-radius: 8px;
   text-align: center;
+  font-weight: bold;
 }
-.awareness { background-color: #e63946; }
-.consideration { background-color: #52b788; }
-.action { background-color: #ffba08; }
-.service-delivery { background-color: #457b9d; }
-.loyalty { background-color: #f4a261; }
-.red { background-color: #e63946; }
-.green { background-color: #52b788; }
-.yellow { background-color: #ffba08; }
-.blue { background-color: #457b9d; }
-.emotion.excited { background-color: #52b788; }
-.emotion.happy { background-color: #ffba08; }
-.emotion.neutral { background-color: #457b9d; }
-.emotion.bad { background-color: #f4a261; }
-.emotion.angry { background-color: #e63946; }
+
+.awareness { background-color: #e74c3c; }
+.consideration { background-color: #27ae60; }
+.action { background-color: #f39c12; }
+.service { background-color: #2980b9; }
+.loyalty { background-color: #f1c40f; }
+
+.steps, .touchpoints, .departments, .emotions, .roadmap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.step, .year {
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.red { background-color: #e74c3c; }
+.green { background-color: #27ae60; }
+.yellow { background-color: #f39c12; }
+.blue { background-color: #2980b9; }
+.orange { background-color: #f39c12; }
+
+.touchpoint {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.department {
+  background-color: #2ecc71;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.emotion {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.year {
+  background-color: #3498db;
+}
+
+.roadmap .year:nth-child(1) { background-color: #3498db; }
+.roadmap .year:nth-child(2) { background-color: #27ae60; }
+.roadmap .year:nth-child(3) { background-color: #f39c12; }
