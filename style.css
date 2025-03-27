@@ -81,16 +81,16 @@ body {
 .departments {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .department {
   background-color: #008000;
   color: white;
-  padding: 20px;
+  padding: 15px;
   border-radius: 20px;
   text-align: center;
-  min-width: 120px;
+  min-width: 100px;
 }
 
 /* Emotions Section */
@@ -98,6 +98,12 @@ body {
   display: flex;
   justify-content: center;
   gap: 20px;
+}
+
+.emotion-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .emotion {
@@ -108,14 +114,13 @@ body {
   justify-content: center;
   align-items: center;
   color: black;
-  font-size: 24px;
-  text-align: center;
-  overflow: hidden;
-  word-wrap: break-word;
+  font-size: 32px;
+  background-color: #f3e16e;
 }
 
 .emotion-label {
   margin-top: 5px;
+  font-size: 16px;
 }
 
 /* Roadmap Section */
