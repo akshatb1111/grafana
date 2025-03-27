@@ -53,18 +53,24 @@ body {
 .touchpoints {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
 }
 
 .touchpoint {
-  width: 150px;
-  height: 30px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 4px solid;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
-  color: white;
+  color: black;
   font-weight: bold;
+}
+
+.touchpoint-label {
+  text-align: center;
+  margin-top: 5px;
 }
 
 /* Departments Section */
@@ -76,8 +82,10 @@ body {
 .department {
   background-color: #008000;
   color: white;
-  padding: 10px 20px;
+  padding: 20px;
   border-radius: 20px;
+  text-align: center;
+  flex: 1;
 }
 
 /* Emotions Section */
@@ -87,10 +95,19 @@ body {
 }
 
 .emotion {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 10px;
-  font-size: 18px;
+  color: black;
+  font-size: 24px;
+}
+
+.emotion-label {
+  text-align: center;
+  margin-top: 5px;
 }
 
 /* Roadmap Section */
