@@ -76,6 +76,7 @@ body {
 /* Departments Section */
 .departments {
   display: flex;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -85,12 +86,13 @@ body {
   padding: 20px;
   border-radius: 20px;
   text-align: center;
-  flex: 1;
+  min-width: 120px;
 }
 
 /* Emotions Section */
 .emotions {
   display: flex;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -113,6 +115,7 @@ body {
 /* Roadmap Section */
 .roadmap, .realized {
   display: flex;
+  justify-content: center;
   gap: 20px;
   align-items: center;
 }
