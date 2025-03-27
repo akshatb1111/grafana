@@ -1,75 +1,104 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #fffbea;
+  background-color: #f9f9d8;
   margin: 0;
   padding: 20px;
 }
 
-.container h2, h3 {
-  color: #333;
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
+/* Phases Section */
 .phases {
   display: flex;
 }
-
 .phase {
   flex: 1;
-  padding: 15px;
   color: white;
   text-align: center;
+  padding: 15px 0;
   font-weight: bold;
 }
+.awareness { background-color: #e53935; }
+.consideration { background-color: #43a047; }
+.action { background-color: #fb8c00; }
+.delivery { background-color: #1e88e5; }
+.loyalty { background-color: #fdd835; }
 
-.awareness { background-color: #e74c3c; }
-.consideration { background-color: #27ae60; }
-.action { background-color: #f39c12; }
-.service { background-color: #2980b9; }
-.loyalty { background-color: #f1c40f; }
-
-.steps, .touchpoints, .departments, .emotions, .roadmap {
+/* Steps Section */
+.steps p { font-weight: bold; }
+.step-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 10px;
+  gap: 5px;
+}
+.step {
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.red { background-color: #e53935; }
+.green { background-color: #43a047; }
+.orange { background-color: #fb8c00; }
+.blue { background-color: #1e88e5; }
+.yellow { background-color: #fdd835; }
+
+/* Touchpoints Section */
+.touchpoints p { font-weight: bold; }
+.touchpoint {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
 }
 
-.step, .year {
-  padding: 10px 20px;
+/* Departments Section */
+.departments p { font-weight: bold; }
+.department {
+  display: inline-block;
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 15px;
   border-radius: 20px;
-  font-weight: bold;
+  margin-right: 5px;
+}
+
+/* Emotions Section */
+.emotions p { font-weight: bold; }
+.emotion {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 15px;
+  border-radius: 20px;
   color: white;
 }
 
-.red { background-color: #e74c3c; }
-.green { background-color: #27ae60; }
-.yellow { background-color: #f39c12; }
-.blue { background-color: #2980b9; }
-.orange { background-color: #f39c12; }
-
-.touchpoint {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-}
-
-.department {
-  background-color: #2ecc71;
-  padding: 10px 15px;
-  border-radius: 10px;
-}
-
-.emotion {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: bold;
-}
-
+/* Roadmap Section */
+.roadmap p { font-weight: bold; }
 .year {
-  background-color: #3498db;
+  display: inline-block;
+  background-color: #0288d1;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-right: 10px;
 }
 
-.roadmap .year:nth-child(1) { background-color: #3498db; }
-.roadmap .year:nth-child(2) { background-color: #27ae60; }
-.roadmap .year:nth-child(3) { background-color: #f39c12; }
+/* Realized Section */
+.realized p { font-weight: bold; }
+.realized-item {
+  display: inline-block;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.realized-item.green { background-color: #43a047; }
+.realized-item.yellow { background-color: #fdd835; }
+.realized-item.red { background-color: #e53935; }
+.realized-item.blue { background-color: #1e88e5; }
