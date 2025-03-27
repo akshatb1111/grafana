@@ -54,6 +54,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
 .touchpoint {
@@ -66,6 +67,9 @@ body {
   align-items: center;
   color: black;
   font-weight: bold;
+  text-align: center;
+  word-wrap: break-word;
+  overflow: hidden;
 }
 
 .touchpoint-label {
@@ -105,10 +109,12 @@ body {
   align-items: center;
   color: black;
   font-size: 24px;
+  text-align: center;
+  overflow: hidden;
+  word-wrap: break-word;
 }
 
 .emotion-label {
-  text-align: center;
   margin-top: 5px;
 }
 
